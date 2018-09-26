@@ -8,6 +8,11 @@
     <artifactId>StoreSystem</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>com.github.2gis.winium</groupId>
@@ -15,24 +20,45 @@
             <version>0.1.0-1</version>
         </dependency>
         <dependency>
-            <groupId>org.jbehave</groupId>
-            <artifactId>jbehave-gherkin</artifactId>
-            <version>4.3.5</version>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-jvm</artifactId>
+            <version>1.2.5</version>
+            <type>pom</type>
         </dependency>
         <dependency>
-            <groupId>org.jbehave.web</groupId>
-            <artifactId>jbehave-web-selenium</artifactId>
-            <version>3.5.5</version>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>1.2.5</version>
         </dependency>
-        <dependency>
-            <groupId>com.github.valfirst</groupId>
-            <artifactId>jbehave-junit-runner</artifactId>
-            <version>2.2.0</version>
-        </dependency>
+
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
             <version>2.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>1.2.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
         </dependency>
     </dependencies>
 
